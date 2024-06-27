@@ -1,0 +1,215 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #080808;
+    --seconde-bg-color: #131313;
+    --text-color: #FFFFFF;
+    --main-color: #DA70D5;
+}
+
+/* Navbar Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 12%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo span {
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+
+/*HOME SECTION*/
+
+.home {
+    padding: 4rem 0;
+    background-color: var(--seconde-bg-color);
+    text-align: center;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+
+/* Section Styles */
+section {
+    padding: 4rem 0;
+    background-color: var(--seconde-bg-color);
+    text-align: center;
+}
+
+section .heading {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+section .heading span {
+    font-size: 2.5rem;
+}
+
+section h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.btn {
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.records-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 3rem;
+}
+
+.records-table th,
+.records-table td {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.records-table th {
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.records-table td {
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+}
+
+.records-table input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.records-table input[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.records-table input[type="submit"]:hover {
+    background-color: var(--main-color-hover);
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--main-color-hover);
+}
+
+
+/* Section Specific Styles */
+.home-content,
+.educ-content,
+.serv-content,
+.proj-content,
+.mess-content {
+    max-width: 100%;
+    margin: 0;
+}
+
+.home .records-table th,
+.education .records-table th,
+.services .records-table th,
+.projects .records-table th,
+.messages .records-table th {
+    font-size: 1.2rem;
+}
+
+.home .records-table td,
+.education .records-table td,
+.services .records-table td,
+.projects .records-table td,
+.messages .records-table td {
+    font-size: 1rem;
+}
+
+.home .records-table tr,
+.education .records-table tr,
+.services .records-table tr,
+.projects .records-table tr,
+.messages .records-table tr {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
